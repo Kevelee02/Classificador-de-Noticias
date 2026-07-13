@@ -117,6 +117,9 @@ Interface construída em **Streamlit**, com:
 
 ### Como rodar
 
+
+#### Opção 1 — Localmente (venv)
+ 
 ```bash
 # 1. Instalar dependências
 pip install -r requirements.txt
@@ -124,12 +127,21 @@ pip install -r requirements.txt
 # 2. Rodar a API
 streamlit run api/api.py
 ```
-
-A API carrega o modelo a partir de um caminho absoluto (calculado via
-`Path(__file__).resolve()`), então funciona independentemente do diretório
-de onde o comando é executado.
-
----
+ 
+#### Opção 2 — Via Docker (recomendado para simular um ambiente de produção)
+ 
+O modelo já treinado (`.joblib`) e o resumo de categorias vêm embutidos na
+própria imagem
+ 
+```bash
+# 1. Construir a imagem
+docker build -t classificador-noticias .
+ 
+# 2. Rodar o container
+docker run -p 8501:8501 classificador-noticias
+```
+ 
+Em ambos os casos, a API fica disponível em `http://localhost:8501`.
 
 ## Testes (`testes/`)
 
