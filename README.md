@@ -25,7 +25,8 @@ CASE_TECNICO_NLP2/
 ├── models/
 │   └── sgdc_classifier_084.joblib   # Pipeline treinada (modelo final)
 ├── requirements.txt
-└── README.md
+├── README.md
+└── pre_processamento.py
 ```
 
 ---
@@ -120,10 +121,7 @@ Interface construída em **Streamlit**, com:
 # 1. Instalar dependências
 pip install -r requirements.txt
 
-# 2. Treinar o modelo (gera o arquivo em models/)
-python src/modelagem.py
-
-# 3. Rodar a API
+# 2. Rodar a API
 streamlit run api/api.py
 ```
 
