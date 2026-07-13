@@ -1,14 +1,14 @@
 {
   "top10_categorias": {
-    "poder": 22022,
-    "colunas": 21622,
-    "mercado": 20970,
-    "esporte": 19730,
-    "mundo": 17130,
-    "cotidiano": 16967,
-    "ilustrada": 16345,
-    "opiniao": 4525,
-    "paineldoleitor": 4011,
-    "saopaulo": 3955
+    "Poder": 22022,
+    "Colunas": 21622,
+    "Mercado": 20970,
+    "Esporte": 19730,
+    "Mundo": 17130,
+    "Cotidiano": 16967,
+    "Ilustrada": 16345,
+    "Opinião": 4525,
+    "Painel do Leitor": 4011,
+    "São Paulo": 3955
   }
 }
