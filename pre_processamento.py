@@ -1,4 +1,4 @@
-"""Compatibilidade de importação para notebooks e scripts.
+"""Compatibilidade de importação para notebook e scripts.
 
 Este módulo reexporta as classes definidas em src.pre_processamento para que
 possam ser importadas por nomes curtos como `from pre_processamento import ...`.
