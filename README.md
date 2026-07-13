@@ -133,7 +133,7 @@ de onde o comando é executado.
 
 ---
 
-## 🧪 Testes (`testes/`)
+## Testes (`testes/`)
 
 Testes unitários para a classe `Engenharia_Features`, cobrindo a limpeza de
 texto e a geração das features numéricas.
