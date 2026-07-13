@@ -7,7 +7,7 @@ exploratória até uma API funcional de classificação.
 ---
 
 
-## 🗂️ Estrutura do projeto
+## Estrutura do projeto
 
 ```
 CASE_TECNICO_NLP2/
@@ -30,7 +30,7 @@ CASE_TECNICO_NLP2/
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 Notícias de jornais brasileiros, com as colunas:
 
@@ -45,7 +45,7 @@ Notícias de jornais brasileiros, com as colunas:
 
 ---
 
-## 🔍 Principais achados da EDA (`src/EDA.py`)
+##  Principais achados da EDA (`src/EDA.py`)
 
 - A esmagadora maioria das notícias vem de uma única fonte
 - A coluna `subcategory` tem muitos valores ausentes e pouca relação com uma
@@ -65,7 +65,7 @@ Notícias de jornais brasileiros, com as colunas:
 
 ---
 
-## ⚙️ Engenharia de features (`src/pre_processamento.py`)
+##  Engenharia de features (`src/pre_processamento.py`)
 
 Uma única classe `Engenharia_Features` (compatível com a API do
 scikit-learn, via `BaseEstimator`/`TransformerMixin`) é usada tanto no
@@ -80,7 +80,7 @@ divergência entre as duas etapas. Ela:
 
 ---
 
-## 🤖 Modelagem (`src/modelagem.py`)
+##  Modelagem (`src/modelagem.py`)
 
 **Pipeline:** `Engenharia_Features` → `TfidfVectorizer` (texto e título,
 unigramas + bigramas) + `StandardScaler` (features numéricas) →
@@ -104,7 +104,7 @@ categorias mais prováveis de cada notícia, não só a predição top-1.
 
 ---
 
-## 🖥️ API (`api/api.py`)
+##  API (`api/api.py`)
 
 Interface construída em **Streamlit**, com:
 
@@ -144,7 +144,7 @@ pytest testes/
 
 ---
 
-## 🛠️ Tecnologias
+##  Tecnologias
 
 - **Python 3.14**
 - **pandas / numpy** — manipulação de dados
