@@ -13,7 +13,9 @@ import numpy as np
 import joblib
 import json
 
+from src import pre_processamento
 from src.pre_processamento import Engenharia_Features
+sys.modules["pre_processamento"] = pre_processamento
 
 #%% Configuração da página — "wide" libera a largura total da tela
 st.set_page_config(
